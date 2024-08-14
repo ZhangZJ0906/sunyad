@@ -1,6 +1,4 @@
 <template>
-
-
     <div class="spongebob-container">
         <div class="spongebob-item" v-for="(item, index) in spongebobNews" :key="index">
             <img :src="item.image" :alt="item.title" class="spongebob-image" />
@@ -11,8 +9,6 @@
             </div>
         </div>
     </div>
-
-
 </template>
 
 <script>
@@ -21,18 +17,18 @@ export default {
     data() {
         return {
             spongebobNews: [
-                { image: '/1280.jpeg', title: '海绵宝宝的冒险', date: '2024-08-14', description: '海绵宝宝說你真夠朋友' },
-                { image: '/images.jpg', title: '派大星的新计划', date: '2024-08-14', description: '派大星决定愛你' },
-                { image: '/1280.jpeg', title: '海绵宝宝的冒险', date: '2024-08-14', description: '海绵宝宝說你真夠朋友' },
-                { image: '/images.jpg', title: '派大星的新计划', date: '2024-08-14', description: '派大星决定愛你' }, 
-                { image: '/1280.jpeg', title: '海绵宝宝的冒险', date: '2024-08-14', description: '海绵宝宝說你真夠朋友' },
-                { image: '/images.jpg', title: '派大星的新计划', date: '2024-08-14', description: '派大星决定愛你' },
-
+                { image: './1280.jpeg', title: '海绵宝宝的冒险', date: '2024-08-14', description: '海绵宝宝說你真夠朋友' },
+                { image: './images.jpg', title: '派大星的新计划', date: '2024-08-14', description: '派大星决定愛你' },
+                { image: './1280.jpeg', title: '海绵宝宝的冒险', date: '2024-08-14', description: '海绵宝宝說你真夠朋友' },
+                { image: './images.jpg', title: '派大星的新计划', date: '2024-08-14', description: '派大星决定愛你' },
+                { image: './1280.jpeg', title: '海绵宝宝的冒险', date: '2024-08-14', description: '海绵宝宝說你真夠朋友' },
+                { image: './images.jpg', title: '派大星的新计划', date: '2024-08-14', description: '派大星决定愛你' },
             ]
         };
     }
 }
 </script>
+
 <style scoped>
 .spongebob-container {
     display: flex;
@@ -50,7 +46,7 @@ export default {
 }
 
 .spongebob-image {
-    width: 125px;
+    width: 120px;
     height: 90px;
     margin-right: 20px;
 }
@@ -66,5 +62,26 @@ h4 {
 
 p {
     margin: 5px 0;
+}
+
+/* 媒体查询用于在手机设备上调整布局 */
+@media (max-width: 600px) {
+    .spongebob-item {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .spongebob-image {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        /* 使图片在小屏幕上更大 */
+        height: auto;
+    }
+
+    .spongebob-content {
+        text-align: center;
+    }
 }
 </style>

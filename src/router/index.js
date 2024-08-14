@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import indexPage from "../components/indexPage.vue";
 const routes = [
   {
-    path: "/",
+    path: "/sunyad/",
     component:indexPage ,
     name: "indexPage",
   },
