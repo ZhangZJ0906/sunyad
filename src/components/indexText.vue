@@ -50,8 +50,8 @@ export default {
 }
 
 .spongebob-image {
-    width: 130px;
-    height: auto;
+    width: 125px;
+    height: 90px;
     margin-right: 20px;
 }
 
