@@ -160,7 +160,9 @@ const leave = (dropdownId) => {
   /* 确保导航栏居中 */
   width: 100%;
 }
-
+.navbar-nav li a:hover{
+background-color: rgb(255, 255, 255);
+}
 .navbar-nav .nav-link {
   display: flex;
   align-items: center;
