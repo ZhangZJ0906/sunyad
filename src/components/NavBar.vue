@@ -1,14 +1,14 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://www.sunyad.com.tw/" target="block">
-        <img src="/logo01.png" alt="logo">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="https://www.sunyad.com.tw/" target="_blank">
+        <img src="/logo01.png" alt="logo" class="logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse text-center" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" aria-current="page" href="#" id="aboutDropdown" role="button"
@@ -38,14 +38,8 @@
               {{ constructionText }}
             </a>
             <ul class="dropdown-menu" aria-labelledby="constructionDropdown">
-              <li><a class="dropdown-item"
-                  href="https://www.google.com/search?sca_esv=09c6452bc1fe88ee&sxsrf=ADLYWILCUirdrKHnc0_orMOFYoWfRDsmDQ:1723563540027&q=%E6%B5%B7%E7%B6%BF%E5%AF%B6%E5%AF%B6%E6%A2%97%E5%9C%96&udm=2&fbs=AEQNm0AaBOazvTRM_Uafu9eNJJzC3QMRKTS5UIeA1ZwBo3sfI5tRK2wzmp0oTr82Uvr9kDU5RO0xZEAgPH8kQ6uw4YLujuEAiXbmg8cQlkVdEzftlSVnJumesF_YaiMzeimFnuqbDbOnfirn0PJIamty4Q_DLvYS8qdzbheUpREWKy0j6swPQiguXGYLqZeZBmG6k_-bgGxd&sa=X&ved=2ahUKEwjmh7TEpvKHAxX-oa8BHeEwCPgQtKgLegQICxAB&biw=1920&bih=911&dpr=1#vhid=5wcvcI7K73moxM&vssid=mosaic"
-                  target="_blank"><img src="\public\images.jpg" alt="派大星">
-                </a></li>
-              <li><a class="dropdown-item"
-                  href="https://www.google.com/search?sca_esv=09c6452bc1fe88ee&sxsrf=ADLYWILCUirdrKHnc0_orMOFYoWfRDsmDQ:1723563540027&q=%E6%B5%B7%E7%B6%BF%E5%AF%B6%E5%AF%B6%E6%A2%97%E5%9C%96&udm=2&fbs=AEQNm0AaBOazvTRM_Uafu9eNJJzC3QMRKTS5UIeA1ZwBo3sfI5tRK2wzmp0oTr82Uvr9kDU5RO0xZEAgPH8kQ6uw4YLujuEAiXbmg8cQlkVdEzftlSVnJumesF_YaiMzeimFnuqbDbOnfirn0PJIamty4Q_DLvYS8qdzbheUpREWKy0j6swPQiguXGYLqZeZBmG6k_-bgGxd&sa=X&ved=2ahUKEwjmh7TEpvKHAxX-oa8BHeEwCPgQtKgLegQICxAB&biw=1920&bih=911&dpr=1#vhid=o_m4ASl0PokNBM&vssid=mosaic"
-                  target="_blank"><img src="\public\1280.jpeg" alt="海綿寶寶" style="width: 260px;"></a></li>
-              
+              <li><a class="dropdown-item" href="#" target="_blank">施工項目1</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank">施工項目2</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -55,9 +49,15 @@
               {{ investorsInfoText }}
             </a>
             <ul class="dropdown-menu" aria-labelledby="investorsInfoDropdown">
-              <li><a class="dropdown-item" href="#" target="_blank">Action</a></li>
-              <li><a class="dropdown-item" href="#" target="_blank">Another action</a></li>
-              <li><a class="dropdown-item" href="#" target="_blank">Something else here</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank">投資人資訊1</a></li>
+              <li class="dropdown-submenu">
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" role="button">投資人資訊2</a>
+                <!-- <span class="dropdown-item">投資人資訊2</span> -->
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#" target="_blank">子選項1</a></li>
+                  <li><a class="dropdown-item" href="#" target="_blank">子選項2</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -67,9 +67,8 @@
               {{ ResponsibilltyText }}
             </a>
             <ul class="dropdown-menu" aria-labelledby="ResponsibilltyDropdown">
-              <li><a class="dropdown-item" href="#" target="_blank">Action</a></li>
-              <li><a class="dropdown-item" href="#" target="_blank">Another action</a></li>
-              <li><a class="dropdown-item" href="#" target="_blank">Something else here</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank">社會責任1</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank">社會責任2</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -79,9 +78,8 @@
               {{ RelatedPartiesText }}
             </a>
             <ul class="dropdown-menu" aria-labelledby="RelatedPartiesDropdown">
-              <li><a class="dropdown-item" href="#" target="_blank">Action</a></li>
-              <li><a class="dropdown-item" href="#" target="_blank">Another action</a></li>
-              <li><a class="dropdown-item" href="#" target="_blank">Something else here</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank">利害關係人1</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank">利害關係人2</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
@@ -91,15 +89,16 @@
               {{ ContactText }}
             </a>
             <ul class="dropdown-menu" aria-labelledby="ContactDropdown">
-              <li><a class="dropdown-item" href="#" target="_blank">Action</a></li>
-              <li><a class="dropdown-item" href="#" target="_blank">Another action</a></li>
-              <li><a class="dropdown-item" href="#" target="_blank">Something else here</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank">聯絡1</a></li>
+              <li><a class="dropdown-item" href="#" target="_blank">聯絡2</a></li>
             </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+
 </template>
 
 <script setup>
@@ -119,7 +118,6 @@ const texts = {
   ResponsibilltyDropdown: { original: '社會責任', hover: 'Responsibility' },
   RelatedPartiesDropdown: { original: '利害關係人專區', hover: 'Related Parties' },
   ContactDropdown: { original: '聯絡我們', hover: 'Contact' }
-
 };
 
 const hover = (dropdownId) => {
@@ -132,7 +130,7 @@ const hover = (dropdownId) => {
     ContactDropdown: () => ContactText.value = texts.ContactDropdown.hover
   };
 
-  textMap[dropdownId]?.(); // 使用可选链操作符，安全调用对应的函数
+  textMap[dropdownId]?.();
 };
 
 const leave = (dropdownId) => {
@@ -145,17 +143,79 @@ const leave = (dropdownId) => {
     ContactDropdown: () => ContactText.value = texts.ContactDropdown.original
   };
 
-  textMap[dropdownId]?.(); // 使用可选链操作符，安全调用对应的函数
+  textMap[dropdownId]?.();
 };
+
+
+
+
+
+
 </script>
 
 <style scoped>
-.navbar-nav .nav-link:hover {
-  background-color: #f8f9fa;
-  color: #000;
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  /* 确保导航栏居中 */
+  width: 100%;
 }
 
-a {
-  color: #000;
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+}
+
+.logo {
+  width: 100px;
+  /* 根据需要调整logo大小 */
+  height: auto;
+}
+
+.navbar-nav li:hover>ul.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0%;
+  left: 100%;
+  margin-top: -3px;
+}
+
+.dropdown-menu>li>a:hover:after {
+  transform: rotate(-90deg);
+  transition: 1s;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+
 }
 </style>
